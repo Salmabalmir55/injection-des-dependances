@@ -1,4 +1,4 @@
-package net.balmir.net.balmir.ext;
+package net.balmir.ext;
 import net.balmir.dao.IDao ;
 
 public class DaoImplv2 implements IDao {
