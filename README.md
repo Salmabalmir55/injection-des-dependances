@@ -400,5 +400,3 @@ mvn exec:java -Dexec.mainClass="ma.projet.presentation.PresentationStatique"
 Projet réalisé dans le cadre d'un TP académique sur les Design Patterns et l'architecture logicielle en Java avec Spring Framework.
 
 ---
-
-> **Note :** Ce projet est à visée pédagogique. Il illustre l'évolution naturelle vers une architecture découplée, maintenable et extensible grâce au principe d'Inversion de Contrôle.
