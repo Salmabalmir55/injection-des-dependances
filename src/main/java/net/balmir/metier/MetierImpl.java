@@ -1,7 +1,11 @@
 package net.balmir.metier;
 import net.balmir.dao.IDao ;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-
+@Service("metier")
 public class MetierImpl implements IMetier {
     private IDao dao;    //couplage faible
 
@@ -10,10 +14,9 @@ public class MetierImpl implements IMetier {
      *un objet d'une classe qui implemente l interface IDAO
      *au moment de l'instantiation (au moment de creation de l'objet)
      */
-    public MetierImpl() {
-    }
 
-    public MetierImpl (IDao dao) {
+
+    public MetierImpl (@Qualifier("d2") IDao dao) {
         this.dao = dao;
     }
     /*Pour injecter dans l'attribut dao
