@@ -1,2 +1,2 @@
-net.balmir.dao.DaoImpl
+net.balmir.ext.DaoImplV2
 net.balmir.metier.MetierImpl
